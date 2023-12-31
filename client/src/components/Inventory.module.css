@@ -125,6 +125,7 @@
 .itemsMain {
   /*padding: 0 95px 98px 95px;*/
   margin-top: 94px;
+  margin-left: 137px;
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
