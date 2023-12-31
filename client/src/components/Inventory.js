@@ -12,7 +12,7 @@ import getFilteredInventoryApi from '../APIs/getFilteredInventoryAPI.js';
 import addToCartAPI from "../APIs/addToCartAPI.js";
 import toast from 'react-hot-toast';
 import saleBannerMobile from '../assets/images/saleBannerMobile.png'
-/*import Loader from './Modals/Loader.js'*/
+import Loader from './Modals/Loader.js'
 
 
 const Products = ({ gridView, response }) => {
@@ -310,7 +310,7 @@ const Inventory = () => {
             </div>}
 
             {filteredInventory.length<1 && !isLoading &&  <Nodata/>}
-            
+            {isLoading && <Loader/>}
 
         </>
     );

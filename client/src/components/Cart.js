@@ -10,7 +10,7 @@ import updateCartQuantityAPI from "../APIs/updateCartQuantityAPI.js";
 import Checkout from './Checkout.js'
 import Navbar, { HomeHeaderMobile } from "./Navbar.js";
 import backButtonMobile from '../assets/icons/backButtonMobile.svg'
-/*import Loader from './Modals/Loader.js'*/
+import Loader from './Modals/Loader.js'
 
 
 const Nodata = () => {
@@ -227,7 +227,7 @@ const Cart = () => {
       </>}
 
       {isCheckoutVisible && <Checkout cartData={cartData} convenienceFee={ConvenienceFee} backPage={setCheckoutVisible} />}
-      
+      {isLoading && <Loader/>}
     </>
   );
 };
